@@ -1,0 +1,7 @@
+dataset_dir: vector
+data_suffix: imu50p5
+job_type: '${model.type}'
+task:
+  _target_: hiss.tasks.VectorTask
+  filter_input: false
+  filter_cutoff: 0.03

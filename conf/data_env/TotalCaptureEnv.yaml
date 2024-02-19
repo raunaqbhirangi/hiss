@@ -1,0 +1,8 @@
+dataset_dir: total_capture
+data_suffix: imu50p5
+job_type: '${model.type}'
+val_dset_path: total_capture_test/total_capture_test_imu50p5.h5
+task:
+  _target_: hiss.tasks.TotalCaptureTask
+  filter_input: false
+  filter_cutoff: 0.03

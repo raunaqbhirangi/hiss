@@ -1,0 +1,7 @@
+_target_: hiss.models.LSTMNet
+input_dim: ${model.model.model_dim}
+hidden_dim: ${model.model.model_dim}
+output_dim: ${model.model.model_dim}
+lstm_hidden_dim: 64
+nlayers: 1
+dropout: ${model.model.dropout}

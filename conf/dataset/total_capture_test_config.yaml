@@ -1,0 +1,52 @@
+data_dir: total_capture_test
+input_data_suffix: processed
+data_suffix: imu50p5
+freq:
+  rot_global_frame_Head: 50
+  acce_global_frame_Head: 50
+  rot_global_frame_Sternum: 50
+  acce_global_frame_Sternum: 50
+  rot_global_frame_Pelvis: 50
+  acce_global_frame_Pelvis: 50
+  rot_global_frame_L_UpArm: 50
+  acce_global_frame_L_UpArm: 50
+  rot_global_frame_R_UpArm: 50
+  acce_global_frame_R_UpArm: 50
+  rot_global_frame_L_LowArm: 50
+  acce_global_frame_L_LowArm: 50
+  rot_global_frame_R_LowArm: 50
+  acce_global_frame_R_LowArm: 50
+  rot_global_frame_L_UpLeg: 50
+  acce_global_frame_L_UpLeg: 50
+  rot_global_frame_R_UpLeg: 50
+  acce_global_frame_R_UpLeg: 50
+  rot_global_frame_L_LowLeg: 50
+  acce_global_frame_L_LowLeg: 50
+  rot_global_frame_R_LowLeg: 50
+  acce_global_frame_R_LowLeg: 50
+  rot_global_frame_L_Foot: 50
+  acce_global_frame_L_Foot: 50
+  rot_global_frame_R_Foot: 50
+  acce_global_frame_R_Foot: 50
+
+  pose_Hips: 5
+  pose_Spine: 5
+  pose_Spine1: 5
+  pose_Spine2: 5
+  pose_Spine3: 5
+  pose_Neck: 5
+  pose_Head: 5
+  pose_RightShoulder: 5
+  pose_RightArm: 5
+  pose_RightForeArm: 5
+  pose_RightHand: 5
+  pose_LeftShoulder: 5
+  pose_LeftArm  : 5
+  pose_LeftForeArm: 5
+  pose_LeftHand: 5
+  pose_RightUpLeg: 5
+  pose_RightLeg: 5
+  pose_RightFoot: 5
+  pose_LeftUpLeg: 5
+  pose_LeftLeg: 5
+  pose_LeftFoot: 5

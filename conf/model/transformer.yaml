@@ -1,0 +1,10 @@
+type: transformer
+model:
+  _target_: hiss.models.TransformerModel
+  _partial_: true
+  # hidden_dim: 32
+  model_dim: 128
+  dropout: 0.1
+  nheads: 2
+  nlayers: 6
+  prenorm: true

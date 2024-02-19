@@ -1,0 +1,7 @@
+dataset_dir: marker_writing_hiss_dataset
+data_suffix: rs50kn5
+job_type: '${model.type}'
+task:
+  _target_: hiss.tasks.MarkerWritingTask
+  filter_input: false
+  filter_cutoff: 0.03

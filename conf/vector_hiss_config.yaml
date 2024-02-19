@@ -1,0 +1,16 @@
+defaults:
+- config
+- override model: hierarchical_mamba
+- override data_env: VectorEnv
+- override model/hl_model@model.model.hl_model: mamba
+- _self_
+
+model:
+  model:
+    model_dim: 64
+    dropout: 0.1
+    hl_model:
+      nlayers: 4
+    ll_model:
+      model_dim: 32
+      nlayers: 4

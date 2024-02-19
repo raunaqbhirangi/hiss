@@ -1,0 +1,22 @@
+defaults:
+- config
+- override model: hierarchical_s4
+- override data_env: MarkerWritingEnv
+- override model/hl_model@model.model.hl_model: mamba
+- _self_
+
+
+model:
+  model:
+    model_dim: 128
+    dropout: 0.1
+    hl_model:
+      nlayers: 6
+      rms_norm: false
+      fused_add_norm: false
+      residual_in_fp32: false
+    ll_model:
+      model_dim: 256
+      nlayers: 6
+      dropout: 0.1
+      prenorm: true

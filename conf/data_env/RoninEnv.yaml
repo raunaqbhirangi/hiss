@@ -1,0 +1,9 @@
+dataset_dir: ronin
+data_suffix: i50o5
+job_type: '${model.type}'
+val_dset_path: ronin/ronin_i50o5_test.h5
+task:
+  _target_: hiss.tasks.RoninTask
+  filter_input: false
+  use_tfs: true
+  filter_cutoff: 0.03

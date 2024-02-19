@@ -1,0 +1,8 @@
+type: s4model
+model:
+  _target_: hiss.models.S4Model
+  _partial_: true
+  model_dim: 128
+  dropout: 0.1
+  nlayers: 6
+  prenorm: true

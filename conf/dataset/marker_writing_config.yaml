@@ -1,0 +1,6 @@
+data_dir: marker_writing_hiss_dataset
+input_data_suffix: processed
+data_suffix: rs50kn5
+freq:
+  kinova: 5
+  tactile: 50

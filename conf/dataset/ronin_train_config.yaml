@@ -1,0 +1,8 @@
+data_dir: ronin
+input_data_suffix: processed_train
+data_suffix: i50o5
+max_dur: 240
+freq:
+  gyro: 50
+  acce: 50
+  tango_pose: 5

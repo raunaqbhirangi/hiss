@@ -1,0 +1,5 @@
+_target_: hiss.models.S4Net
+model_dim: ${model.model.model_dim}
+nlayers: 4
+dropout: ${model.model.dropout}
+prenorm: true

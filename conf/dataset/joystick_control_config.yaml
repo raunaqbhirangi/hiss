@@ -1,0 +1,6 @@
+data_dir: joystick_control_hiss_dataset
+input_data_suffix: processed
+data_suffix: x50e5
+freq:
+  extreme3d: 5
+  xela: 50

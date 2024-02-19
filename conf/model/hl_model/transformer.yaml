@@ -1,0 +1,10 @@
+_target_: torch.nn.TransformerEncoder
+encoder_layer:
+  _target_: torch.nn.TransformerEncoderLayer
+  d_model: ${model.model.model_dim}
+  nhead: 2
+  dim_feedforward: 256
+  dropout: ${model.model.dropout}
+  norm_first: true
+  batch_first: true
+num_layers: 4

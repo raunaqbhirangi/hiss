@@ -1,0 +1,18 @@
+defaults:
+  - hl_model@model.hl_model: s4
+type: hierarchical_s4
+model:
+  _target_: hiss.models.HierarchicalModel
+  _partial_: true
+  # hidden_dim: 32
+  model_dim: 64
+  dropout: 0.1
+  freq_ratio: 10
+  ll_model:
+    _target_: hiss.models.S4Model
+    _partial_: true
+    output_dim: ${model.model.model_dim}
+    model_dim: 64
+    nlayers: 4
+    dropout: 0.1
+    prenorm: true

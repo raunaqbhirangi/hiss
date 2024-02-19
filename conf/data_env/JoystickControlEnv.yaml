@@ -1,0 +1,7 @@
+dataset_dir: joystick_control_hiss_dataset
+data_suffix: x50e5
+job_type: '${model.type}'
+task:
+  _target_: hiss.tasks.JoystickControlTask
+  filter_input: false
+  filter_cutoff: 0.03

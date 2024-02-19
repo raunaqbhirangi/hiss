@@ -1,0 +1,8 @@
+dataset_dir: intrinsic_slip_hiss_dataset
+data_suffix: rs50kn5
+job_type: '${model.type}'
+task:
+  _target_: hiss.tasks.IntrinsicSlipTask
+  filter_input: false
+  dset_split: random
+  filter_cutoff: 0.03

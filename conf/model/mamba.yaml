@@ -1,0 +1,11 @@
+type: mamba
+model:
+  _target_: hiss.models.MambaModel
+  _partial_: true
+  model_dim: 64
+  nlayers: 2
+  ssm_cfg: null
+  norm_epsilon: 1e-5
+  rms_norm: false
+  fused_add_norm: false
+  residual_in_fp32: false

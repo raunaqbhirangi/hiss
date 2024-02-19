@@ -1,0 +1,32 @@
+defaults:
+  - model: s4
+  - data_env: RoninEnv
+  - _self_
+
+# train_frac will be ignored if a val_dset_path is provided in the data_env
+train_frac: 0.8
+lr: 1e-4
+batch_size: 4
+n_epochs: 300
+seed: 5
+
+# Append one-step differences to the input
+append_input_deltas: true
+
+# Downsample model outputs if required. Required for flat models
+low_freq_factor: null
+
+# Used to further partition the training dataset. Used for dataset size ablation
+train_subfrac: 1.0
+
+log_metrics: true
+project_name: test
+
+hydra:
+  job:
+    num: 0
+    chdir: true
+  run:
+    dir: outputs/${project_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}/${hydra.job.num}
+  sweep:
+    dir: outputs/${project_name}/${now:%Y-%m-%d}/${now:%H-%M-%S}

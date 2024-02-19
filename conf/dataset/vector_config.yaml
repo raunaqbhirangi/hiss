@@ -1,0 +1,7 @@
+data_dir: vector
+input_data_suffix: processed
+data_suffix: imu50p5
+freq:
+  gyro: 50
+  acce: 50
+  pose: 5
