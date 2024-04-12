@@ -155,7 +155,7 @@ def evaluate_metrics(val_loader, device, model, task):
                         torch.device("cpu")
                     ).numpy(),
                 )
-            val_metrics.append(val_metric)
+                val_metrics.append(val_metric)
     val_metrics = np.concatenate(val_metrics, axis=0)
     model.train()
     return np.mean(np.abs(val_metrics), axis=0)
